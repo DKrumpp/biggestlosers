@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  max-height: 400px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 70%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<img src="title.png" alt="The Biggest Losers" width="637" height="238">
+ 
+<p>Ranking is based on the number of reported cases of Covid-19 as of 5/15/2020.</p>
+<p><a href="https://dkrumpp.github.io/biggestlosers/">Worst 6 States in the Nation</a></p>
+<p><a href="https://dkrumpp.github.io/biggestlosers/winners.html">Top 3 States in the Nation</a></p>
+<p><a href="https://dkrumpp.github.io/biggestlosers/masks.html">Mask Tips</a></p>
+
+<div class="container">
+  <img src="alaska.png" alt="Alaska." class="image">
+  <div class="overlay">
+    <div class="text">Alaska. 1st. 285 Cases.  9 Deaths.</div>
+  </div>
+</div>
+  
+  <div class="container">
+  <img src="wyoming.png" alt="Wyoming." class="image">
+  <div class="overlay">
+    <div class="text">Wyoming. 2nd. 287	Cases. 1 Death.</div>
+  </div>
+</div>
+
+   <div class="container">
+  <img src="northdakota.png" alt="North Dakota." class="image">
+  <div class="overlay">
+    <div class="text">North Dakota. 3rd. 365 Cases. 9 Deaths.</div>
+  </div>
+</div>
+
+
+</body>
+</html>
